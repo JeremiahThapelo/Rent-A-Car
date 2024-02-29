@@ -74,6 +74,7 @@ body {
   background-color: transparent;
   z-index: 99999;
   margin: 0 auto;
+  border: solid 2px red;
 }
 
 .navbar__img {
