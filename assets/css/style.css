@@ -1,3 +1,396 @@
+/*NAVBAR*/
+@use "../global/" as *;
+
+.navbar {
+  max-width: 133rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.7rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 99999;
+  margin: 0 auto;
+
+  &__img {
+    width: 14.5rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__links {
+    display: flex;
+    list-style: none;
+    gap: 2.1rem;
+
+    a {
+      font-size: $p-size;
+      font-family: $text-font;
+      font-weight: 500;
+      color: $text-black;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $text-orange;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2.5rem;
+    font-size: $p-size;
+    font-family: $text-font;
+    font-weight: 500;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+
+    &__sign-in {
+      color: $text-black;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $text-orange;
+      }
+    }
+
+    &__register {
+      background-color: $text-orange;
+      color: white;
+      padding: 1.5rem 3rem;
+      border-radius: 3px;
+      box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: 0 10px 15px 0 rgb(255 83 48 / 50%);
+        background-color: #fa4226;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+//  mobile nav
+
+.mobile-hamb {
+  font-size: 2.8rem;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $text-orange;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
+  }
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: $bg-white;
+  z-index: 999999;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+
+  &__close {
+    font-size: 3rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 3.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $text-orange;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 2.3rem;
+    gap: 3rem;
+    text-align: center;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $text-black;
+        font-weight: 500;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $text-orange;
+        }
+      }
+    }
+  }
+}
+
+
+.open-nav {
+  left: 0;
+}
+/*END OF NAVBAR*/
+
+/*HERO SECTION*/
+@use "../global" as *;
+
+.hero-section {
+  width: 100%;
+  height: 97vh;
+  background-color: $bg-gray;
+  position: relative;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.hero-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    max-width: 50rem;
+    margin-top: 5rem;
+
+    @media (max-width: 800px) {
+      text-align: center;
+      align-items: center;
+    }
+
+    h4 {
+      font-size: $h4-size;
+      font-family: $text-font;
+      color: $text-black;
+    }
+
+    h1 {
+      font-size: $h1-size;
+      font-family: $titles-font;
+      font-weight: 700;
+      color: $text-black;
+      line-height: 1.2;
+      margin-top: 1rem;
+      margin-bottom: 2.3rem;
+
+      span {
+        color: $text-orange;
+      }
+    }
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      line-height: 1.6;
+      color: $text-gray;
+      margin-bottom: 4rem;
+    }
+
+    &__btns {
+      display: flex;
+      gap: 2rem;
+      font-size: $p-size;
+      font-family: $text-font;
+
+      @media (max-width: 450px) {
+        flex-direction: column;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+      }
+
+      &__book-ride {
+        background-color: $text-orange;
+        padding: 1.8rem 3rem;
+        border-radius: 0.3rem;
+        box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+        transition: all 0.3s;
+        border: 2px solid $text-orange;
+
+        @media (max-width: 450px) {
+          padding: 1.8rem 8rem;
+        }
+
+        &:hover {
+          box-shadow: 0 10px 15px 0 rgb(255 83 48 / 60%);
+          background-color: #fa4226;
+        }
+      }
+
+      &__learn-more {
+        background-color: $text-black;
+        padding: 1.8rem 3rem;
+        border-radius: 0.3rem;
+        border: 2px solid $text-black;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: transparent;
+          color: $text-black;
+        }
+      }
+    }
+  }
+
+  &__car-img {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    width: 65%;
+    margin-top: 5rem;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+}
+
+.scroll-up {
+  position: fixed;
+  font-size: 2.5rem;
+  color: white;
+  background-color: $text-orange;
+  border: 3px solid white;
+  width: 2rem;
+  height: 2rem;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.show-scroll {
+  display: flex;
+}
+/*END OF HERO*/
+
+/*BOILERPLATE*/
+@use "./colors" as *;
+@use "./typhography" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-white;
+  font-family: $titles-font;
+  position: relative;
+}
+
+.container {
+  max-width: 133rem !important;
+  margin: 0 auto !important;
+  padding: 0 2.5rem !important;
+}
+
+// scroll bar ------
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d30 #ffffff;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #ff4d30;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4d30;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ff2525;
+}
+
+/*END OF BOILERPLATE*/
+
+/*STYLE CSS*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -74,7 +467,6 @@ body {
   background-color: transparent;
   z-index: 99999;
   margin: 0 auto;
-  border: solid 2px red;
 }
 
 .navbar__img {
@@ -223,7 +615,7 @@ body {
 .open-nav {
   left: 0;
 }
-/*
+
 .hero-section {
   width: 100%;
   height: 97vh;
@@ -2372,5 +2764,1157 @@ footer {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
   background-color: #fa4226;
 }
-*/
+
 /*# sourceMappingURL=styles.css.map */
+/*END OF STYLE CSS*/
+
+/*BOOK CSS*/
+@use "../global" as *;
+
+.book-section {
+  position: relative;
+
+  background: linear-gradient(to bottom, $bg-gray 20%, $bg-white 80%);
+}
+
+.book-content {
+  margin: 0 auto;
+  margin-bottom: 10rem;
+
+  &__box {
+    background-color: $bg-white;
+    width: 100%;
+    padding: 4rem 4.5rem 5rem 5.5rem;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    height: auto;
+    position: relative;
+    z-index: 4;
+    color: white;
+    border-radius: 5px;
+    background-image: url("/src/images/book-car/book-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: $text-black;
+
+    @media (max-width: 400px) {
+      padding: 4rem 2.5rem 5rem 2.5rem;
+    }
+
+    h2 {
+      font-size: $h3-size;
+      font-weight: 700;
+      margin-bottom: 2.7rem;
+    }
+
+    .box-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 2rem;
+
+      b {
+        color: $text-orange;
+      }
+
+      @media (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (max-width: 630px) {
+        grid-template-columns: 1fr;
+      }
+
+      &__car-type {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: $p-size;
+          font-weight: 600;
+          margin-bottom: 1.2rem;
+
+          i {
+            color: $text-orange;
+          }
+        }
+
+        select {
+          font-size: 1.5rem;
+          color: #ababab;
+          font-family: $text-font;
+          border: 1px solid #ccd7e6;
+          border-radius: 3px;
+          font-weight: 400;
+          padding: 1.2rem 1.3rem;
+          outline: none;
+        }
+      }
+
+      &__car-time {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        input {
+          outline: none;
+          color: #878585;
+          padding-right: 3rem;
+          border: 1px solid #ccd7e6;
+        }
+
+        label {
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-bottom: 1.2rem;
+
+          i {
+            color: $text-orange;
+          }
+        }
+
+        ::-webkit-datetime-edit {
+          padding: 1.3rem 1.3rem;
+        }
+
+        ::-webkit-calendar-picker-indicator {
+          cursor: pointer;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    button {
+      padding: 1.3rem 1.3rem;
+      height: fit-content;
+      align-self: self-end;
+      border: none;
+      font-family: $text-font;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: white;
+      background-color: $text-orange;
+      box-shadow: 0 10px 15px rgb(255 83 48 / 35%);
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        box-shadow: 0 10px 15px rgb(255 83 48 / 55%);
+      }
+    }
+  }
+}
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.8rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  font-size: $p-size;
+  font-weight: 500;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    cursor: pointer;
+  }
+}
+
+.booking-done {
+  color: #2a6817;
+  background-color: #c3fabe;
+  border-color: #f5c6cb;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.8rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  font-size: $p-size;
+  font-weight: 500;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    cursor: pointer;
+  }
+}
+
+// modal & overlay
+
+.active-modal {
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.modal-overlay {
+  opacity: 0;
+  display: none;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999999999;
+  top: 0;
+  right: 0;
+}
+
+.booking-modal {
+  opacity: 0;
+  display: none;
+
+  flex-direction: column;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 999999999999;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 83rem;
+  height: 100vh;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255);
+  padding-right: 2px;
+  color: $text-black;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    top: 50%;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: $text-orange;
+    color: white;
+    align-items: center;
+
+    h2 {
+      font-size: $h3-size;
+      text-transform: uppercase;
+    }
+
+    i {
+      font-size: 2.5rem;
+      color: rgba(255, 255, 255, 0.919);
+      cursor: pointer;
+      transition: all 0.2;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+    background-color: #ffeae6;
+
+    h4 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: $text-orange;
+
+      i {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.7rem;
+      color: #777777;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+
+  &__car-info {
+    background-color: white;
+    padding: 3rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #7777779f;
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    &__dates {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h5 {
+        font-size: 1.8rem;
+        color: $text-orange;
+      }
+
+      span {
+        display: flex;
+        gap: 1rem;
+
+        @media (max-width: 650px) {
+          grid-template-columns: 1fr;
+          text-align: center;
+          justify-content: center;
+        }
+
+        i {
+          font-size: 1.8rem;
+          padding-top: 0.2rem;
+          color: #777777;
+
+          @media (max-width: 650px) {
+            display: none;
+          }
+        }
+
+        h6 {
+          font-size: 1.5rem;
+          margin-bottom: 0.2rem;
+        }
+
+        p {
+          font-size: $p-size;
+          color: #777777;
+        }
+      }
+    }
+
+    &__model {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      @media (max-width: 650px) {
+        margin-top: 3.5rem;
+      }
+
+      h5 {
+        font-size: 1.8rem;
+        color: $text-orange;
+
+        span {
+          color: $text-black;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__person-info {
+    padding: 3rem 3rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      color: $text-orange;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.input-time {
+  text-align: center;
+  width: 8rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.info-form {
+  display: flex;
+  flex-direction: column;
+
+  &__checkbox {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: $p-size;
+    color: #565454;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    input {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+
+  &__1col {
+    grid-template-columns: 1fr !important;
+  }
+
+  &__2col,
+  &__1col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem 0;
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+    }
+
+    span {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      label {
+        font-size: $p-size;
+        font-weight: 500;
+        color: #777777;
+
+        b {
+          color: $text-orange;
+        }
+      }
+
+      input {
+        padding: 14px 15px;
+        background-color: #dbdbdb;
+        color: #555;
+        font-size: 1.5rem;
+        font-weight: 500;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
+
+.reserve-button {
+  background-color: #dbdbdb;
+  margin: 0 -3rem;
+  padding: 3rem;
+  text-align: right;
+
+  @media (max-width: 650px) {
+    text-align: center;
+  }
+
+  button {
+    font-size: $h3-size;
+    color: white;
+    font-weight: 700;
+    background-color: $text-orange;
+    border: 1px solid yellow;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #fe3516;
+    }
+  }
+}
+
+.dates-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+/*END OF BOOK CSS*/
+
+/*PICK SECTION*/
+@use "../global" as *;
+
+.pick-section {
+  padding: 10rem 0;
+}
+
+.pick-container {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    color: $text-black;
+    max-width: 50rem;
+    margin-bottom: 5rem;
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      color: $text-gray;
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: $h3-size;
+      font-family: $text-font;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: $h2-size;
+      font-family: $titles-font;
+      margin: 0.5rem 0 1rem 0;
+    }
+  }
+
+  &__car-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media (max-width: 1050px) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+}
+
+.pick-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  button {
+    font-size: 2rem;
+    font-family: $titles-font;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: 1.5rem 2.5rem;
+    background-color: #e9e9e9;
+    transition: all 0.2s;
+    text-align: left;
+
+    &:hover {
+      background-color: $text-orange;
+      color: white;
+    }
+  }
+}
+
+.pick-car {
+  width: 50rem;
+  position: relative;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+
+.pick-description {
+  width: 25rem;
+
+  &__price {
+    width: 100%;
+    background-color: $text-orange;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    padding: 0.3rem 1.9rem;
+    white-space: nowrap;
+
+    span {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-size: 1.4rem;
+    // font-family: $text-font;
+
+    &__col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      grid-template-rows: auto;
+      padding: 0.9rem 0.5rem;
+      border-bottom: 2px solid #706f7b;
+      border-right: 2px solid #706f7b;
+      border-left: 2px solid #706f7b;
+
+      span:nth-child(1) {
+        border-right: 2px solid #706f7b;
+      }
+    }
+  }
+}
+
+.cta-btn {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  font-family: $titles-font;
+  background-color: $text-orange;
+  padding: 1rem 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.4rem;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 0 #efe9e9;
+
+  &:hover {
+    background-color: #e9381d;
+  }
+}
+
+.box-cars {
+  gap: 11rem;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+.colored-button {
+  background-color: $text-orange !important;
+  color: white;
+}
+
+// spiner
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #00000042;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  right: 43%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*END OF PICK SECTION*/
+
+/*CHOOSE CSS*/
+@use "../global" as *;
+
+.choose-section {
+  background-color: white;
+  padding: 2rem 0 10rem 0;
+  background-image: url("/src/images/chooseUs/bg.png");
+  background-position: -225px 255px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.choose-container {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5.5rem;
+  }
+
+  &__left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    color: $text-black;
+
+    @media (max-width: 1000px) {
+      align-items: center;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: $h4-size;
+      margin-bottom: 0.7rem;
+      font-weight: 600;
+      font-family: $text-font;
+    }
+
+    h2 {
+      font-size: $h2-size;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      line-height: 1.5;
+      color: $text-gray;
+      margin-bottom: 3.3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      background-color: #ff4d30;
+      padding: 1.5rem 2.5rem;
+      border-radius: 0.3rem;
+      box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+      transition: all 0.3s;
+      border: 2px solid #ff4d30;
+      font-size: $p-size;
+      width: fit-content;
+
+      &:hover {
+        box-shadow: 0 10px 15px 0 rgb(255 83 48 / 60%);
+        background-color: #fa4226;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    max-width: 44rem;
+
+    &__box {
+      display: flex;
+
+      @media (max-width: 550px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        width: 11rem;
+        height: 11rem;
+        margin-right: 1.1rem;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+
+        h4 {
+          font-size: $h3-size;
+        }
+
+        p {
+          font-size: $p-size;
+          color: $text-gray;
+          font-family: $text-font;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
+
+/*END OF CHOOSE*/
+
+/*TESTIMONIAL CSS*/
+@use "../global" as *;
+
+.testimonials-section {
+  background-color: $bg-gray;
+  padding: 10rem 0;
+  color: $text-black;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70rem;
+    margin-bottom: 5rem;
+
+    h4 {
+      font-size: $h4-size;
+      font-family: $text-font;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: $h2-size;
+      margin-bottom: 1.4rem;
+    }
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      color: $text-gray;
+      line-height: 1.4;
+    }
+  }
+}
+
+.all-testimonials {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  justify-content: center;
+  padding: 3rem;
+
+  @media (max-width: 1000px) {
+    padding: 0;
+  }
+
+  &__box {
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgb(0 0 0 / 8%);
+    width: 54rem;
+    padding: 5.5rem;
+    position: relative;
+
+    @media (max-width: 1000px) {
+      padding: 5rem 3rem;
+    }
+
+    p {
+      font-size: $h4-size;
+      font-weight: 500;
+    }
+
+    &__name {
+      display: flex;
+
+      &__profile {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 3rem;
+
+        img {
+          width: 7rem;
+          height: 7rem;
+          border-radius: 50%;
+        }
+
+        h4 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: $p-size;
+          font-family: $text-font;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.quotes-icon {
+  font-size: 6.2rem;
+  color: $text-orange;
+  position: absolute;
+  bottom: 33px;
+  right: 60px;
+
+  @media (max-width: 470px) {
+    display: none;
+  }
+}
+
+.box-2 {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+/*END OF TESTIMONIAL*/
+
+/*ABOUT CSS*/
+@use "../global" as *;
+
+// hero for all pages
+.hero-pages {
+  width: 100%;
+  height: 41rem;
+  background-image: url("/src/images/hero/heroes-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.92);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 41rem;
+    justify-content: center;
+    color: $text-black;
+
+    h3 {
+      font-size: 3.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: $p-size;
+      font-weight: 600;
+
+      a {
+        color: $text-black;
+        text-decoration: none;
+        transition: all 0.2s;
+
+        &:hover {
+          color: $text-orange;
+        }
+      }
+    }
+  }
+}
+
+// about scss
+.about-main {
+  margin: 10rem auto;
+  display: flex;
+  gap: 5rem;
+  max-width: 90rem;
+  align-items: center;
+
+  @media (max-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    max-width: 49rem;
+  }
+
+  @media (max-width: 520px) {
+    max-width: 100%;
+  }
+
+  &__img {
+    width: 43rem;
+    height: 43rem;
+
+    @media (max-width: 960px) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 520px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    color: $text-black;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-size: $h4-size;
+      font-family: $text-font;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: $h2-size;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: $p-size;
+      color: $text-gray;
+      font-family: $text-font;
+      line-height: 1.5;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    &__icons {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4rem;
+
+      @media (max-width: 520px) {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        gap: 0;
+
+        p {
+          margin-top: 0;
+        }
+      }
+
+      &__box {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 520px) {
+          align-items: center;
+        }
+
+        .last-fk {
+          width: 5rem;
+        }
+
+        img {
+          width: 7rem;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          @media (max-width: 520px) {
+            text-align: center;
+            flex-direction: column;
+          }
+
+          h4 {
+            font-size: 4.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.book-banner {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  background-image: url("/src/images/banners/book-banner.png");
+  position: relative;
+  margin-top: 7rem;
+
+  @media (max-width: 750px) {
+    height: fit-content;
+    padding: 1rem 0;
+  }
+
+  &__overlay {
+    background-color: #2d2d2d;
+    opacity: 0.89;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.text-content {
+  color: white;
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  span {
+    display: flex;
+    font-size: 2.7rem;
+    gap: 1rem;
+    align-items: center;
+    color: $text-orange;
+    white-space: nowrap;
+  }
+}
+
+/*END OF ABOUT CSS*/
