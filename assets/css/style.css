@@ -40,7 +40,7 @@
       transition: all 0.3s;
 
       &:hover {
-        color: #FFFF00;
+        color: $text_orange;
       }
     }
 
@@ -67,12 +67,12 @@
       transition: all 0.3s;
 
       &:hover {
-        color: #FFFF00;
+        color: $text_orange;
       }
     }
 
     &__register {
-      background-color: #FFFF00;
+      background-color: $text_orange;
       color: white;
       padding: 1.5rem 3rem;
       border-radius: 3px;
@@ -100,7 +100,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: #FFFF00;
+    color: $text_orange;
   }
 
   @media (max-width: 1000px) {
@@ -131,7 +131,7 @@
     transition: all 0.3s;
 
     &:hover {
-      color: #FFFF00;
+      color: $text_orange;
     }
   }
 
@@ -151,7 +151,7 @@
         transition: all 0.3s;
 
         &:hover {
-          color: #FFFF00;
+          color: $text_orange;
         }
       }
     }
@@ -224,7 +224,7 @@
       margin-bottom: 2.3rem;
 
       span {
-        color: #FFFF00;
+        color: $text_orange;
       }
     }
 
@@ -253,12 +253,12 @@
       }
 
       &__book-ride {
-        background-color: #FFFF00;
+        background-color: $text_orange;
         padding: 1.8rem 3rem;
         border-radius: 0.3rem;
         box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
         transition: all 0.3s;
-        border: 2px solid #FFFF00;
+        border: 2px solid $text_orange;
 
         @media (max-width: 450px) {
           padding: 1.8rem 8rem;
@@ -302,7 +302,7 @@
   position: fixed;
   font-size: 2.5rem;
   color: white;
-  background-color: #FFFF00;
+  background-color: $text_orange;
   border: 3px solid white;
   width: 2rem;
   height: 2rem;
@@ -354,7 +354,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ff4d30 #ffffff;
+  scrollbar-color: $text_orange #ffffff;
 }
 
 /* Chrome, Edge and Safari */
@@ -377,11 +377,11 @@ body {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #ff4d30;
+  background-color: $text_orange;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #ff4d30;
+  background-color: $text_orange;
 }
 
 *::-webkit-scrollbar-thumb:active {
@@ -417,7 +417,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ff4d30 #ffffff;
+  scrollbar-color: $text_orange #ffffff;
 }
 
 /* Chrome, Edge and Safari */
@@ -441,11 +441,11 @@ body {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #ff4d30;
+  background-color: $text_orange;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #ff4d30;
+  background-color: $text_orange;
 }
 
 *::-webkit-scrollbar-thumb:active {
@@ -495,7 +495,7 @@ body {
 }
 
 .navbar__links a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 @media (max-width: 1000px) {
@@ -526,11 +526,11 @@ body {
 }
 
 .navbar__buttons__sign-in:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .navbar__buttons__register {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   color: white;
   padding: 1.5rem 3rem;
   border-radius: 3px;
@@ -555,7 +555,7 @@ body {
 }
 
 .mobile-hamb:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 @media (max-width: 1000px) {
@@ -589,7 +589,7 @@ body {
 }
 
 .mobile-navbar__close:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .mobile-navbar__links {
@@ -609,7 +609,7 @@ body {
 }
 
 .mobile-navbar__links li a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .open-nav {
@@ -682,7 +682,7 @@ body {
 }
 
 .hero-content__text h1 span {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .hero-content__text p {
@@ -715,12 +715,12 @@ body {
 }
 
 .hero-content__text__btns__book-ride {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #FFFF00;
 }
 
 @media (max-width: 450px) {
@@ -765,7 +765,7 @@ body {
   position: fixed;
   font-size: 2.5rem;
   color: white;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   border: 3px solid white;
   width: 2rem;
   height: 2rem;
@@ -833,7 +833,7 @@ body {
 }
 
 .book-content__box .box-form b {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 @media (max-width: 1000px) {
@@ -862,7 +862,7 @@ body {
 }
 
 .book-content__box .box-form__car-type label i {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .book-content__box .box-form__car-type select {
@@ -896,7 +896,7 @@ body {
 }
 
 .book-content__box .box-form__car-time label i {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .book-content__box .box-form__car-time ::-webkit-datetime-edit {
@@ -918,7 +918,7 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   color: white;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
   cursor: pointer;
   transition: all 0.3s;
@@ -1020,7 +1020,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   color: white;
   align-items: center;
 }
@@ -1052,7 +1052,7 @@ body {
 .booking-modal__message h4 {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .booking-modal__message h4 i {
@@ -1089,7 +1089,7 @@ body {
 
 .booking-modal__car-info__dates h5 {
   font-size: 1.8rem;
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .booking-modal__car-info__dates span {
@@ -1141,7 +1141,7 @@ body {
 
 .booking-modal__car-info__model h5 {
   font-size: 1.8rem;
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .booking-modal__car-info__model h5 span {
@@ -1163,7 +1163,7 @@ body {
 .booking-modal__person-info h4 {
   font-size: 1.8rem;
   text-transform: uppercase;
-  color: #ff4d30;
+  color: #FFFF00;
   margin-bottom: 2rem;
 }
 
@@ -1230,7 +1230,7 @@ body {
 
 .info-form__2col span label b,
 .info-form__1col span label b {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .info-form__2col span input,
@@ -1261,7 +1261,7 @@ body {
   font-size: 2.4rem;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   border: 1px solid yellow;
   padding: 1.2rem 2rem;
   cursor: pointer;
@@ -1424,7 +1424,7 @@ body {
 }
 
 .pick-box button:hover {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   color: white;
 }
 
@@ -1450,7 +1450,7 @@ body {
 
 .pick-description__price {
   width: 100%;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -1494,7 +1494,7 @@ body {
   font-weight: 600;
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1rem 1rem;
   display: flex;
   width: 100%;
@@ -1530,7 +1530,7 @@ body {
 }
 
 .colored-button {
-  background-color: #ff4d30 !important;
+  background-color: #FFFF00 !important;
   color: white;
 }
 
@@ -1606,7 +1606,7 @@ body {
 }
 
 .banner-content__text span {
-  color: #ff4d30;
+  color: #FFFF00;
   font-weight: 500;
 }
 
@@ -1692,12 +1692,12 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1.5rem 2.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #FFFF00;
   font-size: 1.6rem;
   width: -moz-fit-content;
   width: fit-content;
@@ -1851,7 +1851,7 @@ body {
 
 .quotes-icon {
   font-size: 6.2rem;
-  color: #ff4d30;
+  color: #FFFF00;
   position: absolute;
   bottom: 33px;
   right: 60px;
@@ -1977,7 +1977,7 @@ body {
 }
 
 .active-question {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   color: white;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
 }
@@ -2100,7 +2100,7 @@ footer {
 }
 
 .footer-content__1 li a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .footer-content__1 li:nth-child(1) {
@@ -2144,7 +2144,7 @@ footer {
 }
 
 .footer-content__2 a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .footer-content__2 li {
@@ -2183,12 +2183,12 @@ footer {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1.5rem 2.5rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #FFFF00;
   font-size: 1.6rem;
   width: -moz-fit-content;
   width: fit-content;
@@ -2248,7 +2248,7 @@ footer {
 }
 
 .hero-pages__text p a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .about-main {
@@ -2430,7 +2430,7 @@ footer {
   font-size: 2.7rem;
   gap: 1rem;
   align-items: center;
-  color: #ff4d30;
+  color: #FFFF00;
   white-space: nowrap;
 }
 
@@ -2561,12 +2561,12 @@ footer {
 }
 
 .models-div__box__descr__name-price__btn {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #FFFF00;
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -2705,7 +2705,7 @@ footer {
 }
 
 .contact-div__text a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .contact-div__form {
@@ -2725,7 +2725,7 @@ footer {
 }
 
 .contact-div__form form label b {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .contact-div__form form input {
@@ -2748,12 +2748,12 @@ footer {
 }
 
 .contact-div__form form button {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #FFFF00;
   color: white;
   font-size: 1.8rem;
   font-weight: 600;
@@ -2816,7 +2816,7 @@ footer {
       gap: 2rem;
 
       b {
-        color: #FFFF00;
+        color: $text_orange;
       }
 
       @media (max-width: 1000px) {
@@ -2837,7 +2837,7 @@ footer {
           margin-bottom: 1.2rem;
 
           i {
-            color: #FFFF00;
+            color: $text_orange;
           }
         }
 
@@ -2871,7 +2871,7 @@ footer {
           margin-bottom: 1.2rem;
 
           i {
-            color: #FFFF00;
+            color: $text_orange;
           }
         }
 
@@ -2895,7 +2895,7 @@ footer {
       font-size: 1.8rem;
       font-weight: 500;
       color: white;
-      background-color: #FFFF00;
+      background-color: $text_orange;
       box-shadow: 0 10px 15px rgb(255 83 48 / 35%);
       cursor: pointer;
       transition: all 0.3s;
@@ -3000,7 +3000,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
-    background-color: #FFFF00;
+    background-color: $text_orange;
     color: white;
     align-items: center;
 
@@ -3031,7 +3031,7 @@ footer {
     h4 {
       font-size: 1.9rem;
       font-weight: 700;
-      color: #FFFF00;
+      color: $text_orange;
 
       i {
         font-size: 2.5rem;
@@ -3065,7 +3065,7 @@ footer {
 
       h5 {
         font-size: 1.8rem;
-        color: #FFFF00;
+        color: $text_orange;
       }
 
       span {
@@ -3111,7 +3111,7 @@ footer {
 
       h5 {
         font-size: 1.8rem;
-        color: #FFFF00;
+        color: $text_orange;
 
         span {
           color: $text-black;
@@ -3134,7 +3134,7 @@ footer {
     h4 {
       font-size: 1.8rem;
       text-transform: uppercase;
-      color: #FFFF00;
+      color: $text_orange;
       margin-bottom: 2rem;
     }
   }
@@ -3192,7 +3192,7 @@ footer {
         color: #777777;
 
         b {
-          color: #FFFF00;
+          color: $text_orange;
         }
       }
 
@@ -3223,7 +3223,7 @@ footer {
     font-size: $h3-size;
     color: white;
     font-weight: 700;
-    background-color: #FFFF00;
+    background-color: $text_orange;
     border: 1px solid yellow;
     padding: 1.2rem 2rem;
     cursor: pointer;
@@ -3310,7 +3310,7 @@ footer {
     text-align: left;
 
     &:hover {
-      background-color: #FFFF00;
+      background-color: $text_orange;
       color: white;
     }
   }
@@ -3335,7 +3335,7 @@ footer {
 
   &__price {
     width: 100%;
-    background-color: #FFFF00;
+    background-color: $text_orange;
     font-size: 1.8rem;
     display: flex;
     align-items: center;
@@ -3381,7 +3381,7 @@ footer {
   font-weight: 600;
   color: white;
   font-family: $titles-font;
-  background-color: #FFFF00;
+  background-color: $text_orange;
   padding: 1rem 1rem;
   display: flex;
   width: 100%;
@@ -3413,7 +3413,7 @@ footer {
 }
 
 .colored-button {
-  background-color: #FFFF00 !important;
+  background-color: $text_orange !important;
   color: white;
 }
 
@@ -3521,12 +3521,12 @@ footer {
       text-decoration: none;
       color: white;
       font-weight: 700;
-      background-color: #ff4d30;
+      background-color: #FFFF00;
       padding: 1.5rem 2.5rem;
       border-radius: 0.3rem;
       box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
       transition: all 0.3s;
-      border: 2px solid #ff4d30;
+      border: 2px solid #FFFF00;
       font-size: $p-size;
       width: fit-content;
 
@@ -3679,7 +3679,7 @@ footer {
 
 .quotes-icon {
   font-size: 6.2rem;
-  color: #FFFF00;
+  color: $text_orange;
   position: absolute;
   bottom: 33px;
   right: 60px;
@@ -3744,7 +3744,7 @@ footer {
         transition: all 0.2s;
 
         &:hover {
-          color: #FFFF00;
+          color: $text_orange;
         }
       }
     }
@@ -3912,7 +3912,7 @@ footer {
     font-size: 2.7rem;
     gap: 1rem;
     align-items: center;
-    color: #FFFF00;
+    color: $text_orange;
     white-space: nowrap;
   }
 }
