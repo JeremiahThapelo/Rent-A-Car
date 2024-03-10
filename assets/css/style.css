@@ -40,7 +40,7 @@
       transition: all 0.3s;
 
       &:hover {
-        color: $text-orange;
+        color: $text-yellow;
       }
     }
 
@@ -67,12 +67,12 @@
       transition: all 0.3s;
 
       &:hover {
-        color: $text-orange;
+        color: $text-yellow;
       }
     }
 
     &__register {
-      background-color: $text-orange;
+      background-color: $text-yellow;
       color: white;
       padding: 1.5rem 3rem;
       border-radius: 3px;
@@ -100,7 +100,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: $text-orange;
+    color: $text-yellow;
   }
 
   @media (max-width: 1000px) {
@@ -131,7 +131,7 @@
     transition: all 0.3s;
 
     &:hover {
-      color: $text-orange;
+      color: $text-yellow;
     }
   }
 
@@ -151,7 +151,7 @@
         transition: all 0.3s;
 
         &:hover {
-          color: $text-orange;
+          color: $text-yellow;
         }
       }
     }
@@ -224,7 +224,7 @@
       margin-bottom: 2.3rem;
 
       span {
-        color: $text-orange;
+        color: $text-yellow;
       }
     }
 
@@ -253,12 +253,12 @@
       }
 
       &__book-ride {
-        background-color: $text-orange;
+        background-color: $text-yellow;
         padding: 1.8rem 3rem;
         border-radius: 0.3rem;
         box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
         transition: all 0.3s;
-        border: 2px solid $text-orange;
+        border: 2px solid $text-yellow;
 
         @media (max-width: 450px) {
           padding: 1.8rem 8rem;
@@ -302,7 +302,7 @@
   position: fixed;
   font-size: 2.5rem;
   color: white;
-  background-color: $text-orange;
+  background-color: $text-yellow;
   border: 3px solid white;
   width: 2rem;
   height: 2rem;
@@ -2816,7 +2816,7 @@ footer {
       gap: 2rem;
 
       b {
-        color: $text-orange;
+        color: $text-yellow;
       }
 
       @media (max-width: 1000px) {
@@ -2837,7 +2837,7 @@ footer {
           margin-bottom: 1.2rem;
 
           i {
-            color: $text-orange;
+            color: $text-yellow;
           }
         }
 
@@ -2871,7 +2871,7 @@ footer {
           margin-bottom: 1.2rem;
 
           i {
-            color: $text-orange;
+            color: $text-yellow;
           }
         }
 
@@ -2895,7 +2895,7 @@ footer {
       font-size: 1.8rem;
       font-weight: 500;
       color: white;
-      background-color: $text-orange;
+      background-color: $text-yellow;
       box-shadow: 0 10px 15px rgb(255 83 48 / 35%);
       cursor: pointer;
       transition: all 0.3s;
@@ -3000,7 +3000,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
-    background-color: $text-orange;
+    background-color: $text-yellow;
     color: white;
     align-items: center;
 
@@ -3031,7 +3031,7 @@ footer {
     h4 {
       font-size: 1.9rem;
       font-weight: 700;
-      color: $text-orange;
+      color: $text-yellow;
 
       i {
         font-size: 2.5rem;
@@ -3065,7 +3065,7 @@ footer {
 
       h5 {
         font-size: 1.8rem;
-        color: $text-orange;
+        color: $text-yellow;
       }
 
       span {
@@ -3111,7 +3111,7 @@ footer {
 
       h5 {
         font-size: 1.8rem;
-        color: $text-orange;
+        color: $text-yellow;
 
         span {
           color: $text-black;
@@ -3134,7 +3134,7 @@ footer {
     h4 {
       font-size: 1.8rem;
       text-transform: uppercase;
-      color: $text-orange;
+      color: $text-yellow;
       margin-bottom: 2rem;
     }
   }
@@ -3192,7 +3192,7 @@ footer {
         color: #777777;
 
         b {
-          color: $text-orange;
+          color: $text-yellow;
         }
       }
 
@@ -3223,7 +3223,7 @@ footer {
     font-size: $h3-size;
     color: white;
     font-weight: 700;
-    background-color: $text-orange;
+    background-color: $text-yellow;
     border: 1px solid yellow;
     padding: 1.2rem 2rem;
     cursor: pointer;
@@ -3310,7 +3310,7 @@ footer {
     text-align: left;
 
     &:hover {
-      background-color: $text-orange;
+      background-color: $text-yellow;
       color: white;
     }
   }
@@ -3335,7 +3335,7 @@ footer {
 
   &__price {
     width: 100%;
-    background-color: $text-orange;
+    background-color: $text-yellow;
     font-size: 1.8rem;
     display: flex;
     align-items: center;
@@ -3381,7 +3381,7 @@ footer {
   font-weight: 600;
   color: white;
   font-family: $titles-font;
-  background-color: $text-orange;
+  background-color: $text-yellow;
   padding: 1rem 1rem;
   display: flex;
   width: 100%;
@@ -3413,7 +3413,7 @@ footer {
 }
 
 .colored-button {
-  background-color: $text-orange !important;
+  background-color: $text-yellow !important;
   color: white;
 }
 
@@ -3679,7 +3679,7 @@ footer {
 
 .quotes-icon {
   font-size: 6.2rem;
-  color: $text-orange;
+  color: $text-yellow;
   position: absolute;
   bottom: 33px;
   right: 60px;
@@ -3744,7 +3744,7 @@ footer {
         transition: all 0.2s;
 
         &:hover {
-          color: $text-orange;
+          color: $text-yellow;
         }
       }
     }
@@ -3912,7 +3912,7 @@ footer {
     font-size: 2.7rem;
     gap: 1rem;
     align-items: center;
-    color: $text-orange;
+    color: $text-yellow;
     white-space: nowrap;
   }
 }
