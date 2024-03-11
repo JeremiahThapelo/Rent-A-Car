@@ -534,7 +534,7 @@ body {
   color: black;
   padding: 1.5rem 3rem;
   border-radius: 3px;
-  box-shadow: 0 10px 15px 0 rgb(255, 234, 0, 0.5); /*#faf626 rgba(255, 83, 48, 0.35)*/
+  box-shadow: 0 10px 15px 0 rgb(255, 234, 0, 0.35); /*#faf626 rgba(255, 83, 48, 0.35)*/
   transition: all 0.3s;
 }
 
@@ -682,7 +682,7 @@ body {
 }
 
 .hero-content__text h1 span {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .hero-content__text p {
@@ -715,12 +715,12 @@ body {
 }
 
 .hero-content__text__btns__book-ride {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1.8rem 3rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  box-shadow: 0 10px 15px 0 rgb(255, 234, 0, 0.35);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #FFFF00;
 }
 
 @media (max-width: 450px) {
@@ -730,8 +730,8 @@ body {
 }
 
 .hero-content__text__btns__book-ride:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
-  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgb(255, 234, 0, 0.6);
+  background-color:#FFFF00;
 }
 
 .hero-content__text__btns__learn-more {
