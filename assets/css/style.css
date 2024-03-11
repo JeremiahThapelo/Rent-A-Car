@@ -354,7 +354,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: $text_orange #ffffff;
+  scrollbar-color: #FFFF00 #ffffff;
 }
 
 /* Chrome, Edge and Safari */
@@ -833,7 +833,7 @@ body {
 }
 
 .book-content__box .box-form b {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 @media (max-width: 1000px) {
@@ -918,14 +918,14 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   color: white;
-  background-color: #ff4d30;
-  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+  background-color: #FFFF00;
+  box-shadow: 0 10px 15px rgba(255, 234, 0, 0.35);
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .book-content__box button:hover {
-  box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
+  box-shadow: 0 10px 15px rgba(255, 234, 0, 0.55);
 }
 
 .error-message {
@@ -1424,7 +1424,7 @@ body {
 }
 
 .pick-box button:hover {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   color: white;
 }
 
@@ -1450,7 +1450,7 @@ body {
 
 .pick-description__price {
   width: 100%;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -1494,7 +1494,7 @@ body {
   font-weight: 600;
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1rem 1rem;
   display: flex;
   width: 100%;
@@ -1606,7 +1606,7 @@ body {
 }
 
 .banner-content__text span {
-  color: #ff4d30;
+  color: #FFFF00;
   font-weight: 500;
 }
 
@@ -2183,10 +2183,10 @@ footer {
   text-decoration: none;
   color: white;
   font-weight: 700;
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   padding: 1.5rem 2.5rem;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  box-shadow: 0 10px 15px 0 rgba(255, 234, 0, 0.25);
   transition: all 0.3s;
   border: 2px solid #ff4d30;
   font-size: 1.6rem;
@@ -2197,8 +2197,8 @@ footer {
 }
 
 .submit-email:hover {
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.4);
-  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(255, 234, 0, 0.5);
+  background-color: #FFFF00;
 }
 
 .hero-pages {
@@ -3388,10 +3388,10 @@ footer {
   justify-content: center;
   margin-top: 1.4rem;
   transition: all 0.3s;
-  box-shadow: 6px 6px 0 #efe9e9;
+  box-shadow: 6px 6px 0 #FFFF00;
 
   &:hover {
-    background-color: #e9381d;
+    background-color: #FFFF00;
   }
 }
 
