@@ -495,7 +495,7 @@ body {
 }
 
 .navbar__links a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 @media (max-width: 1000px) {
@@ -526,7 +526,7 @@ body {
 }
 
 .navbar__buttons__sign-in:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .navbar__buttons__register {
@@ -534,12 +534,12 @@ body {
   color: black;
   padding: 1.5rem 3rem;
   border-radius: 3px;
-  box-shadow: 0 10px 15px 0 rgb(255, 234, 0)/*#faf626 rgba(255, 83, 48, 0.35)*/;
+  box-shadow: 0 10px 15px 0 rgb(255, 234, 0, 0.5); /*#faf626 rgba(255, 83, 48, 0.35)*/
   transition: all 0.3s;
 }
 
 .navbar__buttons__register:hover {
-  box-shadow: 0 10px 15px 0 rgb(255, 234, 0) /*#faf626 rgba(255, 83, 48, 0.5)*/;
+  box-shadow: 0 10px 15px 0 rgb(255, 234, 0, 0.5); /*#faf626 rgba(255, 83, 48, 0.5)*/
   background-color: #FFFF00;
 }
 
@@ -555,7 +555,7 @@ body {
 }
 
 .mobile-hamb:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 @media (max-width: 1000px) {
@@ -589,7 +589,7 @@ body {
 }
 
 .mobile-navbar__close:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .mobile-navbar__links {
@@ -609,7 +609,7 @@ body {
 }
 
 .mobile-navbar__links li a:hover {
-  color: #ff4d30;
+  color: #FFFF00;
 }
 
 .open-nav {
