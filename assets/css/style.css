@@ -530,7 +530,7 @@ body {
 }
 
 .navbar__buttons__register {
-  background-color: #ff4d30;
+  background-color: #FFFF00;
   color: white;
   padding: 1.5rem 3rem;
   border-radius: 3px;
@@ -540,7 +540,7 @@ body {
 
 .navbar__buttons__register:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
-  background-color: #fa4226;
+  background-color: #FFFF00;
 }
 
 .navbar__buttons a {
