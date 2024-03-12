@@ -708,7 +708,7 @@ body {
 
 .hero-content__text__btns a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -1530,7 +1530,7 @@ body {
 }
 
 .colored-button {
-  background-color: #ff4d30 !important;
+  background-color: #FFFF00 !important;
   color: white;
 }
 
@@ -2188,7 +2188,7 @@ footer {
   border-radius: 0.3rem;
   box-shadow: 0 10px 15px 0 rgba(255, 234, 0, 0.25);
   transition: all 0.3s;
-  border: 2px solid #ff4d30;
+  border: 2px solid #FFFF00;
   font-size: 1.6rem;
   width: -moz-fit-content;
   width: fit-content;
